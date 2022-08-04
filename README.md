@@ -46,6 +46,7 @@ To answer these questions we walk through many different pandas & matplotlib met
 - Plotting bar charts and lines graphs to visualize our results
 - Labeling our graphs
 
+***
 ## Launch
 ***
 You do not have to do anything. Just simply go to data_analysis folder and look at 'data_analysis.ipynb'
