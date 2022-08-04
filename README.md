@@ -1,24 +1,24 @@
-### Data Science Project: 
+## Data Science Project: 
 
 ***
-### Introduction
+## Introduction
 This is my first data science project. After having a basic grasp of Pandas, NumPy and Matplotlib, which are indispensable tools for perfoming a variety of data science tasks with Python, I decided to do this project to further solidify my skills.
 
 This project is mainly concerned with doing some elementary data analysis on the results of 74000 students' from the National High School Exam in 2020 at Ho Chi Minh city, Vietnam.
 ***
-### Technologies
+## Technologies
 - Programming Language: Python
 - Tools: Python Pandas, Python Matplotlib
 ***
-### Project Description
+## Project Description
 ***
-1. Data Collection - How did I manage to get this dataset ?
+### Data Collection - How did I manage to get this dataset ?
 
 You can view an exam taker's results at 'diemthi.hcm.edu.vn' by entering their id number which has the format '020xxxxx' where xxxxx goes from 00001 to about 74719. To retrieve this data (in HTML form) and display it on a Python terminal, I used this command "curl -F "SoBaoDanh=your-id-number" diemthi.hcm.edu.vn/Home/Show". This will return a very nasty-looking, unreadable display of one's results. 
 
 Knowing that around 75000 students took this exam in 2020, I created 'data_collection.py' to automate this data-fetching process. This file, when being run, essentially executes the above 'curl' command 75000 times with id numbers incrementing by 1 and stores everything in a variable, before writing them to a txt file called 'raw_data.txt' (this file is very heavy (195MB) and thus cannot be stored on GitHub). 'raw_data.txt' contains all the raw form results of each of those 75000 students, each of the result line is in serious need of cleaning and processing.
 
-2. Data Cleaning and Processing
+### Data Cleaning and Processing
 
 In my opinion I believe this is the most gruesome part of this project :))
 
@@ -26,7 +26,7 @@ At first I tried to clean just the first line (result of first person) in 'raw_d
 
 Upon reading the 'clean_data.csv' file and playing around with the data, I realised that some students have 00/00 as their birthday, which is totally invalid. Once again, I have to change these faulty birthdays to 01/01, and convert all the birthday column to datetime object to make them easier to work with.
 
-3. Data Analysis
+### Data Analysis
 
 In this section I used Python Pandas & Python Matplotlib in a Jupyter Notebook file to analyse and answer some questions about the results of 75000 students:
 
@@ -46,6 +46,6 @@ To answer these questions we walk through many different pandas & matplotlib met
 - Plotting bar charts and lines graphs to visualize our results
 - Labeling our graphs
 
-### Launch
+## Launch
 ***
 You do not have to do anything. Just simply go to data_analysis folder and look at 'data_analysis.ipynb'
