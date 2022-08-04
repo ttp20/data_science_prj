@@ -24,7 +24,7 @@ In my opinion I believe this is the most arduous part of this project :))
 
 At first I tried to clean just the first line (result of first person) in 'raw_data.txt' to figure out the how a line should be cleaned and presented in such a human-readable way. There are a lot of HTML tags, weird characters and whitespaces that need to be removed, and also the names of students are in Vietnamese so I had to convert all the unicodes to their respective letters. I downloaded the Unicode conversion system from the internet and created 'unicode.py' to store it as a dictionary which can then be accessed easily. Finally, 'one_row_processing.py' was created to handle all of the above logic, for ONE LINE ONLY. Hence, 'data_processing.py' was created to do that for all the lines in 'raw_data.txt' and save everything in a nicely readable csv file, 'clean_data.csv' that could be used for our data analysis.
 
-Upon reading the 'clean_data.csv' file in Jupyter Notebook and playing around with the data, I realised that some students have 00/00 as their birthday, which is totally invalid. Once again, I had to change these faulty birthdays to 01/01, and convert the birthday column to datetime object to make the dates easier to work with.
+Upon reading the 'clean_data.csv' file in Jupyter Notebook and playing around with the data, I realised that some students have 00/00 as their birthday, which is totally invalid. Once again, I had to change these faulty birthdays to 01/01 (which does not influence the answers to our questions below), and convert the birthday column to datetime object to make the dates easier to work with.
 
 ### Data Analysis
 
