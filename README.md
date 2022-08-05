@@ -12,7 +12,7 @@ This project is mainly concerned with doing some elementary data analysis on the
 
 ## Project Description
 
-### Data Collection - How did I manage to get this dataset ?
+### Data Collection by Web Scraping ?
 
 You can view an exam taker's results at 'diemthi.hcm.edu.vn' by entering his id number which has the format '020xxxxx' where xxxxx goes from 00001 to about 74719. To retrieve this data (in HTML form) and display it on a Python terminal, I used this command "curl -F "SoBaoDanh=your-id-number" diemthi.hcm.edu.vn/Home/Show". This will return a very nasty-looking, unreadable display of one's results. 
 
